@@ -13,12 +13,9 @@
   </head>
   <body>
     <div class="mainpage">
-      <button class="arrow">
-        <img
-          src="./img/mp/baseline_keyboard_arrow_down_black_18dp.png"
-          alt=""
-        />
-      </button>
+      <a href="#directions" class="arrow"
+        ><img src="./img/mp/baseline_keyboard_arrow_down_black_18dp.png" alt=""
+      /></a>
       <div class="header">
         <h2>SO ALL GOOD TRIPS</h2>
         <h1>Путешествуй с нами</h1>
@@ -29,19 +26,15 @@
         </h2>
       </div>
     </div>
-    <div class="directions">
+    <div class="directions" id="directions">
       <div class="buttoncontainer">
         <div class="imageb"></div>
         <div class="buttonwrapper">
           <div class="buttoncol">
-            <button class="buttond">
-              <h1>О нас</h1>
-            </button>
+            <a href="#about" class="buttond">О нас</a>
           </div>
           <div class="buttoncol">
-            <button class="buttond1">
-              <h1>Связь с нами</h1>
-            </button>
+            <a href="#contactus" class="buttond">Связь с нами</a>
           </div>
         </div>
       </div>
@@ -141,7 +134,7 @@
         </div>
       </div>
     </div>
-    <div class="aboutus">
+    <div class="aboutus" id="about">
       <div class="container3">
         <h1>О нас</h1>
         <p>
@@ -186,7 +179,7 @@
         </div>
       </div>
     </div>
-    <div class="formpage">
+    <div class="formpage" id="contactus">
       <div class="container2">
         <h1>
           Вас заинтересовал какой-то тур? Оставьте заявку и мы расскажем вам о
@@ -218,7 +211,10 @@
       </div>
     </div>
     <div class="footer">
-      <button class="insta" onClick='location.href="https://www.instagram.com/soallgood_trips/"'></button>
+      <button
+        class="insta"
+        onClick='location.href="https://www.instagram.com/soallgood_trips/"'
+      ></button>
     </div>
     <script src="./main.js"></script>
   </body>

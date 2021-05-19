@@ -29,8 +29,25 @@ body {
   position: absolute;
   top: 90%;
   left: 50%;
-  transform: translate(-50%, 0);
+
   background-color: transparent;
+  -webkit-animation: pulsing 5s infinite;
+  animation: pulsing 5s infinite;
+}
+
+@-webkit-keyframes pulsing {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
 }
 
 .directions {
@@ -82,15 +99,18 @@ body {
   background-color: black;
   color: #ffffff;
   border: none;
+  outline: none;
+  text-decoration: none;
 }
 
-.buttond1 {
-  min-height: 20px;
-  min-width: 40%;
-  height: 100%;
-  background-color: black;
-  color: #ffffff;
-  border: none;
+.buttond:hover {
+  background: rgb(255, 255, 255);
+  color: #000000;
+}
+
+.buttond:active {
+  background: rgb(255, 255, 255);
+  color: #000000;
 }
 
 .container {
@@ -300,13 +320,11 @@ input[type="text"] {
 
 @media screen and (max-width: 420px) {
   .header {
-    
     padding-top: 30%;
   }
-  .header h1{
+  .header h1 {
     padding-top: 5%;
     padding-bottom: 5%;
-    
   }
 
   .buttoncontainer {

@@ -1,26 +1,12 @@
-function scrollTo(element) {
-  window.scroll({
-    left: 0,
-    top: element.offsetTop,
-    behavior: "smooth",
-  });
-}
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
 
-var arrow = document.querySelector(".arrow");
-var firstpage = document.querySelector(".directions");
-var aboutbutton = document.querySelector(".buttond");
-var aboutpage = document.querySelector(".aboutus");
-var tripsbutton = document.querySelector(".buttond1");
-var formpage = document.querySelector(".formpage");
-
-arrow.addEventListener("click", () => {
-  scrollTo(firstpage);
-});
-
-aboutbutton.addEventListener("click", () => {
-  scrollTo(aboutpage);
-});
-
-tripsbutton.addEventListener("click", () => {
-  scrollTo(formpage);
-});
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
