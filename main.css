@@ -243,6 +243,79 @@ body {
   text-align: center;
 }
 
+.photos {
+  height: 70vh;
+  background-color: white;
+  color: black;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 10px 40px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  background: rgb(0, 0, 0);
+}
+
+.carousel img {
+  padding-left: 5px;
+  width: 350px;
+  height: 350px;
+  display: block;
+}
+
+.arrow1 {
+  position: absolute;
+  top: 45%;
+  padding: 0;
+  background: rgb(0, 0, 0);
+  border: none;
+  color: white;
+  font-size: 24px;
+  line-height: 24px;
+  display: block;
+}
+
+.arrow1:focus {
+  outline: none;
+}
+
+.arrow1:hover {
+  background: rgb(255, 255, 255);
+  color: black;
+  cursor: pointer;
+}
+
+.prev {
+  left: 7px;
+}
+
+.next {
+  right: 7px;
+}
+
+.gallery {
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery ul {
+  height: 256px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 20px;
+
+  font-size: 0;
+}
+
+.gallery li {
+  display: inline-block;
+}
+
 .formpage {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.637)),
