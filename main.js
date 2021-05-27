@@ -8,6 +8,7 @@ for (let smoothLink of smoothLinks) {
 
     document.querySelector(id).scrollIntoView({
       block: "start",
+      behavior: "smooth"
     });
   });
 }
@@ -31,3 +32,5 @@ carousel.querySelector(".next").onclick = function () {
   position = Math.max(position, -width * (listElems.length - count));
   list.style.marginLeft = position + "px";
 };
+
+

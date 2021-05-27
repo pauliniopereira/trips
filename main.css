@@ -148,6 +148,11 @@ body {
   border-radius: 5px;
 }
 
+.card img{
+  width: 256px;
+  height: 172px;
+}
+
 .how {
   height: auto;
   background-color: white;
@@ -241,6 +246,11 @@ body {
   color: #ffffff;
   justify-content: center;
   text-align: center;
+}
+
+.aboutcard img{
+  width: 259px;
+  height: 172px;
 }
 
 .photos {
@@ -367,6 +377,15 @@ input[type="text"] {
   display: inline-block;
   cursor: pointer;
   position: relative;
+}
+
+.submit{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: rgb(0, 0, 0) 2px solid;
+  border-radius: 15px;
+  height: 48px;
+  width: 100%;
 }
 
 .form_radio input[type="radio"]:checked {
